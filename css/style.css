@@ -1,0 +1,296 @@
+@font-face {
+    font-family: Franklin;
+    src: url(../css/FranklinGothicHeavyRegular.ttf);
+}
+
+@font-face {
+    font-family: "Avant Garde Gothic";
+    src: url(../css/ITCAvantGardeGothicLTBold.otf);
+}
+
+@font-face {
+    font-family: "Helvetica Now";
+    src: url(../css/HelveticaNowText-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Atarian";
+    src: url(../css/SfAtarianSystemBold-w3rz.ttf);
+}
+
+body{
+    background-color: rgba(90, 118, 133);
+    color: #2c2c2c;
+}
+
+.boxtop1{
+    display: flex;
+    color:#b9413c;
+    font-family: "Avant Garde Gothic", sans-serif;
+    font-size: 5vw;
+}
+
+.boxtop1.sticky{
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+}
+
+.boxtop{
+    display: flex;
+    margin-top:3vw;
+    color:#b9413c;
+    font-family: "Avant Garde Gothic", sans-serif;
+    font-size: 5vw;
+}
+
+.boxtoptitle {
+    height: 6.5vw;
+    background-color: rgba(197,192,163);
+    padding: 1vw 2vw 1vw 2vw;
+    white-space: nowrap;
+    align-self: flex-end;
+}
+
+.boxtopqueer{
+    width: 0px;
+    height: 0px;
+    -webkit-transform:rotate(360deg);
+    border-style: solid;
+    border-width: 8.5vw 0 0 8.5vw;
+    border-color: transparent transparent transparent rgba(197,192,163);
+}
+
+.boxbtmqueer{
+    width: 0px;
+    height: 0px;
+    margin-top: -5vw;
+    margin-left: -8.4vw;
+    -webkit-transform:rotate(360deg);
+    border-style: solid;
+    border-width: 0 8.5vw 8.5vw 0;
+    border-color: transparent rgba(197,192,163) transparent transparent;
+}
+
+.boxbtmqueershadow1{
+    width: 0px;
+    height: 0px;
+    margin-top: -4.1vw;
+    margin-left: -8.5vw;
+    -webkit-transform:rotate(360deg);
+    border-style: solid;
+    border-width: 0 8.5vw 8.5vw 0;
+    border-color: transparent rgb(153, 149, 128) transparent transparent;
+}
+
+.boxbtmqueershadow2{
+    width: 0px;
+    height: 0px;
+    margin-top: -3.1vw;
+    -webkit-transform:rotate(360deg);
+    border-style: solid;
+    border-width: 0 8.5vw 8.5vw 0;
+    border-color: transparent #666355 transparent transparent;
+}
+
+.boxmiddle{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(197,192,163);
+    justify-content: center;
+    font-family: "Avant Garde Gothic", sans-serif;
+    color: #2c2c2c;
+    font-size: 35px;
+
+    border-style: ridge;
+    border-width: 0 0 2vw 0;
+    border-color: rgb(153, 149, 128);
+}
+
+.boxmiddle > div{
+    padding: 2vw 2vw 2vw 2vw;
+    flex: 100%
+}
+
+.boxbottom{
+    display: flex;
+    margin-top: 3vw;
+    justify-content: flex-end;
+    font-family: "Avant Garde Gothic", sans-serif;
+}
+
+.boxbottomdiv {
+    display: flex;
+    margin-top: -5vw;
+    margin-left: -0.1vw;
+    background-color: rgba(197,192,163);
+    height: 6.5vw;
+    align-self: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: end;
+    font-size: 3vw;
+    padding: 1vw 2vw 1vw;
+    flex-basis: 60vw;
+    flex-shrink: 1;
+    border-style: ridge;
+    border-width: 0 0 2vw 0;
+    border-color: rgb(153, 149, 128);
+}
+
+img{
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.image:hover{
+    opacity: 0.8;
+}
+
+h1{
+    color:rgba(90, 118, 133);
+    font-family: "Atarian", sans-serif;
+    font-size: 35vw;
+    justify-self: center;
+    padding: 0vw;
+    margin: -3vw;
+    letter-spacing: .05em;
+    text-shadow: 
+        0.6vw 0.6vw 0vw rgba(197,192,163), 
+        1.4vw 1.4vw 0vw rgba(90, 118, 133, 0.4);
+}
+h2{
+    font-family: "Avant Garde Gothic", sans-serif;
+    margin: 0vw;
+    font-size: 5vw;
+    color: #2c2c2c;
+    letter-spacing: .05em;
+    text-shadow: 
+        0.2vw 0.2vw 0vw rgba(197,192,163), 
+        0.5vw 0.5vw 0vw rgba(0, 0, 0, 0.2);
+}
+h3{
+    display: inline;
+    font-family: "Avant Garde Gothic", sans-serif;
+    margin: 0vw;
+    font-size: 3vw;
+    color: #2c2c2c;
+    letter-spacing: .05em;
+    text-shadow: 
+        0.2vw 0.2vw 0vw rgba(197,192,163), 
+        0.5vw 0.5vw 0vw rgba(0, 0, 0, 0.2);
+}
+h4{
+    display: inline;
+    font-family: "Atarian", sans-serif;
+    margin: 0vw;
+    font-size: 6vw;
+    color: rgba(90, 118, 133);
+    letter-spacing: .05em;
+    text-shadow: 
+        0.2vw 0.2vw 0vw rgba(197,192,163), 
+        0.5vw 0.5vw 0vw rgba(90, 118, 133, 0.4);
+}
+h5{
+    font-family: "Arial", Arial, sans-serif;
+    margin: 0;
+    background-color: #2c2c2c;
+    color: rgba(197,192,163);
+    text-align: center;
+
+}
+
+.text{
+    font-family: Bukinist, serif;
+    font-size: 30px;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.one{
+    text-decoration: none;
+    color: #2c2c2c;
+    letter-spacing: .05em;
+    text-shadow: 
+        0.2vw 0.2vw 0vw rgba(197,192,163), 
+        0.5vw 0.5vw 0vw rgba(0, 0, 0, 0.2);
+}
+
+.one:hover {
+    color: #b9413c;
+    letter-spacing: .05em;
+    text-shadow: 
+        0.2vw 0.2vw 0vw rgba(197,192,163), 
+        0.5vw 0.5vw 0vw rgba(185, 65, 60, 0.2);
+}
+
+a.two{
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+a.two:hover {
+    color: #b9413c;
+}
+
+.three{
+    text-decoration: none;
+    color: rgba(90, 118, 133);
+    letter-spacing: .05em;
+    text-shadow: 
+        0.2vw 0.2vw 0vw rgba(197,192,163), 
+        0.5vw 0.5vw 0vw rgba(90, 118, 133, 0.4);
+}
+
+.three:hover {
+    color: #b9413c;
+    letter-spacing: .05em;
+    text-shadow: 
+        0.2vw 0.2vw 0vw rgba(197,192,163), 
+        0.5vw 0.5vw 0vw rgba(185, 65, 60, 0.2);
+}
+
+.noscroll{
+    overflow: hidden;
+}
+
+.infobox{
+    font-family: "Arial", Arial, sans-serif;
+    font-size: 20px;
+    padding: 1vw 1vw 1vw 1vw;
+
+    border-style: solid;
+    border-width: 0.2vw;
+    border-color: #2c2c2c;
+}
+
+@media (max-width: 1080px) {
+    .boxmiddle{
+        flex-wrap: wrap;
+        font-size: 3vw;
+    }
+    .text{
+        font-size: 3vw;
+    }
+    .infobox{
+        font-size: 2vw;
+    }
+} 
+
+@media (max-width: 600px) {
+    .boxmiddle{
+        font-size: 15px;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .infobox{
+        font-size: 13px;
+    }
+} 
+
+@media (max-width: 350px) {
+    h2{
+        font-size: 15px;
+    }
+}
