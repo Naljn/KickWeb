@@ -337,6 +337,12 @@ a.two:hover {
     animation-timing-function: steps(40, end);
 }
 
+.box .title.tp.igd{
+    animation-delay: .5s;
+    animation-duration: 5s; 
+    animation-timing-function: steps(40, end);
+}
+
 .typewriter h2{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .1em solid transparent; /* The typwriter cursor */
@@ -351,7 +357,7 @@ a.two:hover {
 }
 .typewriter.igd h2{
     animation-delay: 2s;
-    animation: blink-caret .75s step-end 8;
+    animation: blink-caret .75s step-end 6;
 }
 
 .typewriter.ig h2{
