@@ -2,14 +2,17 @@
     font-family: Franklin;
     src: url(../css/FranklinGothicHeavyRegular.ttf);
 }
+
 @font-face {
     font-family: "Avant Garde Gothic";
     src: url(../css/ITCAvantGardeGothicLTBold.otf);
 }
+
 @font-face {
     font-family: "Helvetica Now";
     src: url(../css/HelveticaNowText-Bold.ttf);
 }
+
 @font-face {
     font-family: "Atarian";
     src: url(../css/SfAtarianSystemBold-w3rz.ttf);
@@ -18,144 +21,138 @@
 body{
     background-color: rgba(90, 118, 133);
     color: #2c2c2c;
-
-    cursor: url("../images/logo_blau_s.png"), pointer;
-
 }
 
-
-.box{
-    display:flex;
+.boxtop1{
+    display: flex;
+    color:#b9413c;
+    font-family: "Avant Garde Gothic", sans-serif;
+    font-size: 5vw;
 }
 
-.box .title{
-    background-color: rgba(197,192,163);
-    align-self: flex-end;
-    white-space: nowrap;
-
-    height: 6.5vw;
-    padding: 1vw 2vw 1vw 2vw;
+.boxtop1.sticky{
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
 }
 
-.box .marg{
+.boxtop{
+    display: flex;
     margin-top:3vw;
+    color:#b9413c;
+    font-family: "Avant Garde Gothic", sans-serif;
+    font-size: 5vw;
 }
 
-.box .queer{
+.boxtoptitle {
+    height: 6.5vw;
+    background-color: rgba(197,192,163);
+    padding: 1vw 2vw 1vw 2vw;
+    white-space: nowrap;
+    align-self: flex-end;
+}
+
+.boxtopqueer{
     width: 0px;
     height: 0px;
     -webkit-transform:rotate(360deg);
     border-style: solid;
-}
-.box .queer.top{
-    margin-right: 1.5vw;
     border-width: 8.5vw 0 0 8.5vw;
     border-color: transparent transparent transparent rgba(197,192,163);
-    transform: scale(1.01) translate(-0.01vw, 0.01vw);
 }
-.box .queer.btm{
-    margin-top: -2vw;
+
+.boxbtmqueer{
+    width: 0px;
+    height: 0px;
+    margin-top: -5vw;
     margin-left: -8.4vw;
+    -webkit-transform:rotate(360deg);
+    border-style: solid;
     border-width: 0 8.5vw 8.5vw 0;
     border-color: transparent rgba(197,192,163) transparent transparent;
-    transform: scale(1.01) translate(0.01vw, -0.01vw);
 }
 
-.box .queer.btm.sticky{
-    position: sticky;
-    top: 3vw;
-    z-index: 300;
-}
-
-.box .queer.btm.shd1{
-    margin-top: -1vw;
+.boxbtmqueershadow1{
+    width: 0px;
+    height: 0px;
+    margin-top: -4.1vw;
     margin-left: -8.5vw;
+    -webkit-transform:rotate(360deg);
+    border-style: solid;
+    border-width: 0 8.5vw 8.5vw 0;
     border-color: transparent rgb(153, 149, 128) transparent transparent;
-    transform: scale(1.01) translate(0.01vw, -0.01vw);
 }
-.box .queer.btm.shd2{
-    margin-top: 0vw;
+
+.boxbtmqueershadow2{
+    width: 0px;
+    height: 0px;
+    margin-top: -3.1vw;
+    -webkit-transform:rotate(360deg);
+    border-style: solid;
+    border-width: 0 8.5vw 8.5vw 0;
     border-color: transparent #666355 transparent transparent;
 }
 
-.box.mid{
+.boxmiddle{
+    display: flex;
     flex-wrap: nowrap;
+    background-color: rgba(197,192,163);
     justify-content: center;
-    background-color: rgba(197,192,163);
-    border-style: ridge;
-    border-width: 0 0 2vw 0vw;
-    border-color: rgb(153, 149, 128);
-    
-}
-
-.box.mid.sticky{
-    position: sticky;
-    top: 0;
-    z-index: 300;
-}
-
-.box.mid > div{
-    padding: 2vw 2vw 2vw 2vw;
-    flex: 100%
-}
-
-.box .bottom{
-    background-color: rgba(197,192,163);
-    display:flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-    flex: 100%;
-    flex-basis: 60vw;
-    flex-shrink: 1;
-
-    margin-top: -2vw;
-    margin-left: -0.1vw;
-    height: 6.5vw;
-    padding: 1vw 2vw 1vw;
+    font-family: "Avant Garde Gothic", sans-serif;
+    color: #2c2c2c;
+    font-size: 35px;
 
     border-style: ridge;
     border-width: 0 0 2vw 0;
     border-color: rgb(153, 149, 128);
 }
 
-.box .bottom.sticky{
-    position: sticky;
-    top: 3vw;
-    z-index: 300;
+.boxmiddle > div{
+    padding: 2vw 2vw 2vw 2vw;
+    flex: 100%
+}
+
+.boxbottom{
+    display: flex;
+    margin-top: 3vw;
+    justify-content: flex-end;
+    font-family: "Avant Garde Gothic", sans-serif;
+}
+
+.boxbottomdiv {
+    display: flex;
+    margin-top: -5vw;
+    margin-left: -0.1vw;
+    background-color: rgba(197,192,163);
+    height: 6.5vw;
+    align-self: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: end;
+    font-size: 3vw;
+    padding: 1vw 2vw 1vw;
+    flex-basis: 60vw;
+    flex-shrink: 1;
+    border-style: ridge;
+    border-width: 0 0 2vw 0;
+    border-color: rgb(153, 149, 128);
 }
 
 img{
     max-width: 100%;
-    /*border-style: ridge;
-    border-width: 2vw 0 0 0;
-    border-color:rgb(153, 149, 128);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 img.image:hover{
-    /*opacity: 0.8;*/
-    cursor: url("../images/logo_rot.png"), pointer;
+    opacity: 0.8;
 }
-
-.vid{
-    max-width: 96%;
-    /*border-style: ridge;
-    border-width: 2vw 0 0 0;
-    border-color:rgb(153, 149, 128);*/
-
-    margin: 2vw;
-
-    position:relative; 
-    padding-bottom:calc(56.25% + 44px);
-}
-
 
 h1{
     color:rgba(90, 118, 133);
     font-family: "Atarian", sans-serif;
     font-size: 35vw;
     justify-self: center;
-    padding: 2vw;
+    padding: 0vw;
     margin: -3vw;
     letter-spacing: .05em;
     text-shadow: 
@@ -202,15 +199,8 @@ h5{
     text-align: center;
 
 }
-h6{
-    margin:0vw;
-    font-family: "Avant Garde Gothic", sans-serif;
-    color: #2c2c2c;
-    font-size: 35px;
-}
 
 .text{
-    color: #2c2c2c;
     font-family: Bukinist, serif;
     font-size: 30px;
     align-items: flex-start;
@@ -227,7 +217,6 @@ h6{
 }
 
 .one:hover {
-    cursor: url("../images/logo_rot.png"), pointer;
     color: #b9413c;
     letter-spacing: .05em;
     text-shadow: 
@@ -241,7 +230,6 @@ a.two{
 }
 
 a.two:hover {
-    cursor: url("../images/logo_rot.png"), pointer;
     color: #b9413c;
 }
 
@@ -255,7 +243,6 @@ a.two:hover {
 }
 
 .three:hover {
-    cursor: url("../images/logo_rot.png"), pointer;
     color: #b9413c;
     letter-spacing: .05em;
     text-shadow: 
@@ -282,12 +269,6 @@ a.two:hover {
         flex-wrap: wrap;
         font-size: 3vw;
     }
-    .box.mid{
-        flex-wrap: wrap;
-    }
-    h6{
-        font-size: 3vw;
-    }
     .text{
         font-size: 3vw;
     }
@@ -298,10 +279,6 @@ a.two:hover {
 
 @media (max-width: 600px) {
     .boxmiddle{
-        flex-wrap: wrap;
-        font-size: 15px;
-    }
-    h6{
         font-size: 15px;
     }
     .text{
@@ -317,86 +294,3 @@ a.two:hover {
         font-size: 15px;
     }
 }
-
-.box .title.tp{
-    max-width: 0;
-    width: auto;
-    white-space: nowrap;
-
-    animation-name: textin;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.box .title.tp.new{
-    animation-delay: .5s;
-    animation-duration: 5s; 
-    animation-timing-function: steps(40, end);
-}
-
-.box .title.tp.ig{
-    animation-delay: 2.5s;
-    animation-duration: 5s; 
-    animation-timing-function: steps(40, end);
-}
-
-.typewriter h2{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .1em solid transparent; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 left; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .1em; /* Adjust as needed */
-}
-
-.typewriter.new h2{
-    animation: blink-caret .75s step-end 3;
-    
-}
-.typewriter.igd h2{
-    animation-delay: 2s;
-    animation: blink-caret .75s step-end 8;
-}
-
-.typewriter.ig h2{
-    animation: blink-caret .75s step-end 8;
-}
-
-.typewriter.user h2{
-    animation: typing 3.5s steps(11, end),
-}
-
-@keyframes textin {
-    from{ max-width: 0%; }
-    to{ max-width: 100%; }
-}
-
-@keyframes typing {
-    from{ width: 0%; }
-    to{ width: 100%; }
-}
-  
- /* The typewriter cursor effect */
- @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #5a5a5a; }
- }
-
- .buddy{
-    position: fixed;
-    margin-left: 20vw;
-    width: 12%;
-    bottom: 3%;
-    right: -15%;
-    z-index: 500;
-
-    animation-name: comebuddy;
-    animation-delay: 5s;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes comebuddy{
-    from { right: -15%;}
-    to { right: 3vw; }
- }
