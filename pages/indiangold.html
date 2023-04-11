@@ -6,19 +6,24 @@
     <meta charset="utf-8" />
   </head>
   <body>
-    <div class="box mid sticky">
+    <div class="box mid fix">
       &nbsp
     </div>
 
     <div class="box" class="noscroll">
-      <div class ="title marg tp ig typewriter"><h2>INDIAN GOLD</h2></div>
-      <div class="queer top marg">&nbsp</div>
+      <div class ="title marg tp ig typewriter" id="typewriter"><h2>INDIAN GOLD</h2></div>
+      <div class="queer top marg" id="mar">&nbsp</div>
   
-      <div class="queer btm shd2 sticky">&nbsp</div>
-      <div class="queer btm shd1  sticky">&nbsp</div>
-      <div class="queer btm sticky">&nbsp</div>
-  
-      <div class ="bottom sticky"><a class="one" href="main.html"><h3 class="one">NEW</h3> <h4 class = "three">ATARI</h4> <h3 class="one">USER</h3></a></div>
+      
+      
+      <div class ="bottom fixed" id="atari">
+        <div class="ecke">
+          <div class="queer btm shd2 sticky">&nbsp</div>
+          <div class="queer btm shd1  sticky">&nbsp</div>
+          <div class="queer btm sticky">&nbsp</div>
+        </div>
+       
+        <a class="one" href="main.html"><h3 class="one">NEW</h3> <h4 class = "three">ATARI</h4> <h3 class="one">USER</h3></a></div>
     </div>
 
     <div class="box mid">
@@ -76,5 +81,24 @@
         </div>
       </div>
     </div>
+
+    <script>
+
+      const intervalID = setInterval(setWidth, 100);
+      let cnt=0;
+
+      let element = document.getElementById("atari");
+
+      function setWidth(){
+        let w=parseInt(window.innerWidth - document.getElementById("typewriter").getBoundingClientRect().width - document.getElementById("mar").getBoundingClientRect().width);
+        //console.log(w)
+        element.style.width="calc("+w+"px - 8.4vw)";
+        cnt++;
+        if(cnt > 50){
+          clearInterval(intervalID);
+        }
+      }
+      
+    </script>
   </body>
 </html> 

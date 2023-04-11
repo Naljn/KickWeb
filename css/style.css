@@ -19,7 +19,7 @@ body{
     background-color: rgba(90, 118, 133);
     color: #2c2c2c;
 
-    cursor: url("../images/logo_blau_s.png"), pointer;
+    cursor: url("../images/atari_logo-cursor_blue.png"), pointer;
 
 }
 
@@ -41,6 +41,14 @@ body{
     margin-top:3vw;
 }
 
+.ecke{
+    position: absolute;
+    left:-1.5px;
+    top:2vw;
+    display: flex;
+    z-index: 300;
+}
+
 .box .queer{
     width: 0px;
     height: 0px;
@@ -52,19 +60,14 @@ body{
     border-width: 8.5vw 0 0 8.5vw;
     border-color: transparent transparent transparent rgba(197,192,163);
     transform: scale(1.01) translate(-0.01vw, 0.01vw);
+    z-index: 0;
 }
 .box .queer.btm{
     margin-top: -2vw;
-    margin-left: -8.4vw;
+    margin-left: -8.3vw;
     border-width: 0 8.5vw 8.5vw 0;
     border-color: transparent rgba(197,192,163) transparent transparent;
     transform: scale(1.01) translate(0.01vw, -0.01vw);
-}
-
-.box .queer.btm.sticky{
-    position: sticky;
-    top: 3vw;
-    z-index: 300;
 }
 
 .box .queer.btm.shd1{
@@ -88,11 +91,12 @@ body{
     
 }
 
-.box.mid.sticky{
-    position: sticky;
-    top: 0;
-    z-index: 300;
-}
+.box.mid.fix{
+    
+    position:sticky;
+    top: 8px;
+    right:8px;
+  }
 
 .box.mid > div{
     padding: 2vw 2vw 2vw 2vw;
@@ -119,11 +123,10 @@ body{
     border-color: rgb(153, 149, 128);
 }
 
-.box .bottom.sticky{
-    position: sticky;
-    top: 3vw;
-    z-index: 300;
-}
+.box .bottom.fixed{
+    position:fixed;
+    right:8px;
+  }
 
 img{
     max-width: 100%;
@@ -134,19 +137,13 @@ img{
 
 img.image:hover{
     /*opacity: 0.8;*/
-    cursor: url("../images/logo_rot.png"), pointer;
+    cursor: url("../images/atari_logo-cursor_red.png"), pointer;
 }
 
 .vid{
     max-width: 96%;
-    /*border-style: ridge;
-    border-width: 2vw 0 0 0;
-    border-color:rgb(153, 149, 128);*/
 
     margin: 2vw;
-
-    position:relative; 
-    padding-bottom:calc(56.25% + 44px);
 }
 
 
@@ -227,7 +224,7 @@ h6{
 }
 
 .one:hover {
-    cursor: url("../images/logo_rot.png"), pointer;
+    cursor: url("../images/atari_logo-cursor_red.png"), pointer;
     color: #b9413c;
     letter-spacing: .05em;
     text-shadow: 
@@ -241,7 +238,7 @@ a.two{
 }
 
 a.two:hover {
-    cursor: url("../images/logo_rot.png"), pointer;
+    cursor: url("../images/atari_logo-cursor_red.png"), pointer;
     color: #b9413c;
 }
 
@@ -255,7 +252,7 @@ a.two:hover {
 }
 
 .three:hover {
-    cursor: url("../images/logo_rot.png"), pointer;
+    cursor: url("../images/atari_logo-cursor_red.png"), pointer;
     color: #b9413c;
     letter-spacing: .05em;
     text-shadow: 
